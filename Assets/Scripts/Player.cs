@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Player : Character
 {
@@ -6,7 +8,7 @@ public class Player : Character
 
     private float movementValue = 0F;
 
-    
+    public Slider healthBar;
 
     //private void Start()
     //{
@@ -20,6 +22,8 @@ public class Player : Character
         {
             FireBullet();
         }
+
+        healthBar.value.health
 
         if (Input.GetAxis("Horizontal") != 0)
         {
