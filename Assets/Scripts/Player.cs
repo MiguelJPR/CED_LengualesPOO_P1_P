@@ -23,7 +23,7 @@ public class Player : Character
             FireBullet();
         }
 
-        healthBar.value.health
+        
 
         if (Input.GetAxis("Horizontal") != 0)
         {
